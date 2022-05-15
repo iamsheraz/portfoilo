@@ -258,7 +258,7 @@ const WholeWrapper = (props) => {
                                         <a href="mailto:sherazztariq@gmail.com" className="chat">
                                             Let's get in touch!
                                         </a>
-                                        <a href="https://docs.google.com/document/d/1zqwhTXhj5UckcOpSX03yGjo5NCRnAKCmWtsy6jtD2Qs/edit?usp=sharing" target="_blank" className="resume">
+                                        <a href="https://drive.google.com/file/d/1-LlMMYnRQXv8O37aj-HnJ9FXQJOwfztM/view?usp=sharing" target="_blank" className="resume">
                                             PDF Resume
                                         </a>
                                     </div>
