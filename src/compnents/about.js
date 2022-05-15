@@ -26,7 +26,7 @@ const About = (props) => {
                                 <a href="mailto:sherazztariq@gmail.com" className="chat">
                                     Let's get in touch!
                                 </a>
-                                <a href="https://drive.google.com/file/d/1OT9hoD_b8tRu0E05C599uxGk6SeOthXb/view?usp=drivesdk" target="_blank" className="resume">
+                                <a href="https://drive.google.com/file/d/1-LlMMYnRQXv8O37aj-HnJ9FXQJOwfztM/view?usp=sharing" target="_blank" className="resume">
                                     PDF Resume
                                 </a>
                             </div>
