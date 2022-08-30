@@ -36,7 +36,7 @@ const WholeWrapper = (props) => {
                                 <h2 className="txt_heading">
                                     A Computer Science and Software Development student <span className="clr-blue"> with a background in Analyst</span>
                                 </h2>
-                                <p className="point">Currently enrolled at Bellevue University, School of Business with a graduation date of June 2022</p>
+                                <p className="point">Graduated from Bellevue University, School of Business with a graduation date of June 2022</p>
                                 <p className="point">I started out in  Computer Science Studies before transitioning into my current program - driven by a curiosity of building products as a whole</p>
                                 <p className="point">Making things a reality is my passion; whether that’s in videography, software development, or even dreaming up new business ideas</p>
                                 <p className="point clr-blue">
@@ -182,8 +182,8 @@ const WholeWrapper = (props) => {
                                     <div className="row mx-0 cardsrow">
                                         <div className="col-lg-6 col-md-6 col-sm-12 mt-5 ps-0">
                                             <div className='tabscard_one'>
-                                                <p className='tab_home_p pt-4'>Sales Support Specialist at CarMax Garland</p>
-                                                <p className='mt-3'>Greet prospective clients and analyze their purchase needs by actively listening and making suggestions based on their automobile needs.</p>
+                                                <p className='tab_home_p pt-4'>Sales Data Associate at CarMax Garland</p>
+                                                <p className='mt-3'>Supported management with in depth analysis and distributed sales metrics.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -205,10 +205,10 @@ const WholeWrapper = (props) => {
                                                 <p className='tab_home_p pt-4'>Claims Analyst at State Farm Insurance Richardson,</p>
                                                 <p className='tab_home_seco'>TX 2019 to 2021:</p>
                                                 <p className='mt-3'>
-                                                    Determined the liability for the various stakeholders involved in accidents.
+                                                    Perform analysis on the data, and mining information valuable for the business.
                                                 </p>
                                                 <p className="mt-1">
-                                                    Investigate, analyze, and resolve claims involving complex issues, including but not limited to coverage questions. This required to be knowledgeable and informed on current automobile insurance regulations and laws.
+                                                    Research Production issues through knowledge of SQL/Database and provide timely solutions.
                                                 </p>
                                                 <p className="mt-1">
                                                     Conduct in-depth interviews of stakeholders involved in the accident to determine the liability.
