@@ -34,13 +34,13 @@ const WholeWrapper = (props) => {
                         <div className="col-lg-7 col-md-7 col-sm-7 pe-0 col-md-10 txt_cont">
                             <div className="main_txt_inner">
                                 <h2 className="txt_heading">
-                                    A Computer Science and Software Development student <span className="clr-blue"> with a background in Analyst</span>
+                                    A seasoned Java Full Stack Developer <span className="clr-blue"> Computer science graduate from Bellevue University driven by a passion for building robust software solutions from end to end</span>
                                 </h2>
-                                <p className="point">Graduated from Bellevue University, School of Business with a graduation date of June 2022</p>
-                                <p className="point">I started out in  Computer Science Studies before transitioning into my current program - driven by a curiosity of building products as a whole</p>
-                                <p className="point">Making things a reality is my passion; whether that’s in videography, software development, or even dreaming up new business ideas</p>
+                                <p className="point">My journey in software development started with an intense curiosity about how products are built as a whole. This curiosity evolved into a passion for making things a reality, whether that’s in software development, or in conceiving innovative business ideas.</p>
+                                <p className="point">Whether it's developing Microservices using Spring Boot</p>
+                                <p className="point">Creating responsive UI components, or utilizing AWS services to support web applications</p>
                                 <p className="point clr-blue">
-                                    That’s why I’m interested in the Front end, a way for me to build things across engineering, business, and design
+                                    I'm always thrilled to take on the challenge. I am eager to leverage my skills and experiences to create software that makes a difference.
                                 </p>
                             </div>
                         </div>
@@ -72,13 +72,13 @@ const WholeWrapper = (props) => {
                                     Curiosity and passion, always trying new things, <span className="clr-blue">and learning through doing</span>
                                 </h2>
                                 <p className="point">
-                                    I believe in experimentation and exploring new things, taking on new challenges while applying creative thinking.
+                                    I embrace experimentation and exploration in my work, taking on new challenges with creative thinking.
                                 </p>
                                 <p className="point">
-                                    Impact and mentorship are also things that I care about, whether that's learning from others or passing on my experiences - at the end of the day, I want to leave a positive impact in any way I can
+                                    I care deeply about making an impact and mentoring others, learning from experiences and sharing my own knowledge - I aim to leave a positive imprint wherever I can.
                                 </p>
                                 <p className="point clr-blue">
-                                    I'm still very early in my career and have a lot to understand - hence I heavily value personal and professional growth!
+                                    Although I have gained substantial experience and technical skills over the years, I consider myself at an early stage in my career with endless possibilities ahead. This mindset drives my dedication to personal and professional growth, as I continually refine my mastery in Java, J2EE technologies, and various cutting-edge tools and frameworks.
                                 </p>
                             </div>
                         </div>
@@ -115,28 +115,28 @@ const WholeWrapper = (props) => {
                                         LANGUAGES - THE TECHNICAL KIND
                                     </span>
                                     <br />
-                                    Javascript (Typescript), Java, Python, SQL
+                                    Proficient in Java, JavaScript (including TypeScript), and SQL, with a foundational understanding of Python.
                                 </p>
                                 <p className="point">
                                     <span className="title_tag">
                                         PRODUCT
                                     </span>
                                     <br />
-                                    User interviews, Product requirement docs, User stories, and Prioritization, Being helpful!
+                                    With a rich background in full-stack development, I have participated in user interviews, helped prepare product requirement documents, crafted user stories, and conducted prioritization exercises. I believe in collaboration and constructive teamwork.
                                 </p>
                                 <p className="point">
                                     <span className="title_tag">
                                         FRAMEWORKS AND TECHNICAL
                                     </span>
                                     <br />
-                                    Node.js, React.js, Next.js
+                                    J2EE technologies, Spring MVC, Spring Boot, Angular, IBM MQ, Kafka, and React.js among others.
                                 </p>
                                 <p className="point">
                                     <span className="title_tag">
                                         SOFTWARE TOOLS
                                     </span>
                                     <br />
-                                    Tableau (learning), Salesforce, Jira, Adobe CC (Premiere, After Effects, Lightroom), Googling &amp; Stackoverflow
+                                    I am well-versed in version control tools (GIT, SVN), build tools (Maven, Gradle), and continuous integration tools (Jenkins). Furthermore, I have experience with AWS and other cloud services, Docker, Kubernetes, and tools for managing user accounts and configurations. I regularly leverage resources like Google and Stack Overflow for problem-solving and knowledge expansion.
                                 </p>
                             </div>
                         </div>
@@ -182,8 +182,8 @@ const WholeWrapper = (props) => {
                                     <div className="row mx-0 cardsrow">
                                         <div className="col-lg-6 col-md-6 col-sm-12 mt-5 ps-0">
                                             <div className='tabscard_one'>
-                                                <p className='tab_home_p pt-4'>Sales Data Associate at CarMax Garland</p>
-                                                <p className='mt-3'>Supported management with in depth analysis and distributed sales metrics.</p>
+                                                <p className='tab_home_p pt-4'>Java Full Stack Developer at NextGear Capital</p>
+                                                <p className='mt-3'>As a Java Full Stack Developer at NextGear Capital, I contributed to developing Microservices & APIs using Spring Boot and Apache Kafka, built responsive UI components with React.js and Angular, and utilized AWS for cloud solutions. I was also involved in Agile development, database management, and implemented unit and integration testing.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -194,24 +194,21 @@ const WholeWrapper = (props) => {
                                     <div className="row mx-0 cardsrow">
                                         <div className="col-lg-6 col-md-6 col-sm-12 mt-4 ps-0">
                                             <div className='tabscard_one'>
-                                                <p className='tab_home_p pt-4'>Technical Support at Fry's Electronics - Plano,</p>
-                                                <p className='tab_home_seco'>TX 2015 to 2019:</p>
-                                                <p className='mt-4'>Worked and managed tech team to help clients debug their hardware and software issues.</p>
-                                                <p className="mt-1">Building new custom machines for businesses based on client needs.</p>
+                                                <p className='tab_home_p pt-4'>Java Full Stack Developer at CDO Technologies.</p>
+                                                <p className='tab_home_seco'>TX 2018 to 2019:</p>
+                                                <p className='mt-4'> contributed to software development in an Agile environment, developed user interfaces using Spring MVC and AngularJS, and implemented Spring features such as Dependency Injection and AOP. Additionally, I worked on RESTful services, managed transactions with Hibernate and JPA, and established a CI/CD pipeline using Jenkins.</p>
+                                                <p className="mt-1">Moreover, I was actively involved in the development of a Service Oriented Architecture (SOA) application, creating a single-page application using AngularJS. I gained extensive experience with Hibernate Criteria queries and ORM mappings, alongside creating Spring Batch processes and working with message broker services like Rabbit MQ and Active MQ. I also conducted end-to-end testing using the Protractor framework and implemented integration testing with Selenium and Cucumber. The role at CDO Technologies further bolstered my ability to work across various technologies and frameworks in the dynamic field of software development.</p>
                                             </div>
                                         </div>
                                         <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 pe-0">
                                             <div className='tabscard_one'>
-                                                <p className='tab_home_p pt-4'>Claims Analyst at State Farm Insurance Richardson,</p>
+                                                <p className='tab_home_p pt-4'>Software Developer at Molina health care.</p>
                                                 <p className='tab_home_seco'>TX 2019 to 2021:</p>
                                                 <p className='mt-3'>
-                                                    Perform analysis on the data, and mining information valuable for the business.
+                                                    I was a Java Developer participating in all stages of the software development life cycle using Agile methodologies. I was heavily involved in business process analysis, requirements gathering, and creating user interface components using various technologies such as JSP, Spring, Servlets, and AngularJS. My tasks also included integrating Tiles 3 framework with Spring MVC and utilizing Hibernate and JPA for data access. Moreover, I implemented both RESTful and SOAP-based web services and maintained AWS infrastructure. My work at Molina Health Care gave me the opportunity to utilize my full skill set and deliver comprehensive software solutions.
                                                 </p>
                                                 <p className="mt-1">
                                                     Research Production issues through knowledge of SQL/Database and provide timely solutions.
-                                                </p>
-                                                <p className="mt-1">
-                                                    Conduct in-depth interviews of stakeholders involved in the accident to determine the liability.
                                                 </p>
                                             </div>
                                         </div>
@@ -224,7 +221,7 @@ const WholeWrapper = (props) => {
                                         <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 pe-0">
                                             <div className='tabscard_one'>
                                                 <p className='tab_home_p pt-4'>Youtune - A SoundCloud Site</p>
-                                                <p className='tab_home_seco'>August 2021 - November 2021</p>
+                                                <p className='tab_home_seco'>August 2018 - November 2018</p>
                                                 <p className='mt-3'>
                                                     This project was a collaboration of the Bellevue University, Youtune is, a project for a songs system using JAVA Server. to YouTunes as a platform for releasing their newest material with a complete artist-owned purchasing model. Users see YouTunes as the first stop to find out announcements, sampler tracks, and build-your-own music bundles for their favorite artists that they can easily take with them on the go by storing those bundles in the cloud or have them downloaded to their favorite device. Used JSP, GitHub and Java, and SQL.
                                                 </p>
@@ -249,16 +246,16 @@ const WholeWrapper = (props) => {
                                         </span>
                                     </h2>
                                     <p>
-                                        My number 1 passion is making things - hence Development and being a product-minded Software Engineer are ways for me to build across engineering, design, and business.
+                                        As a Java Full Stack Developer, my foremost passion lies in creating robust and effective software solutions. This role allows me to construct across the broad spectrum of engineering, design, and business, capitalizing on my skills and interests.
                                     </p>
                                     <p>
-                                        I've got a lot more to share and would love to chat about potential internship opportunities; even if they don't exist yet - let's get the conversation started!
+                                        With over six years of professional experience, I have a wealth of knowledge to share and am eager to embrace new challenges. I am particularly interested in exploring opportunities where I can apply my technical prowess and product-oriented mindset to foster growth and innovation. Even if a formal opportunity does not currently exist, I am open to discussion and potential collaboration. Let's start the conversation!
                                     </p>
                                     <div className="hero_btns pt-2 mt-4 d-flex align-items-center">
                                         <a href="mailto:sherazztariq@gmail.com" className="chat">
                                             Let's get in touch!
                                         </a>
-                                        <a href="https://drive.google.com/file/d/1OT9hoD_b8tRu0E05C599uxGk6SeOthXb/view?usp=drivesdk" target="_blank" className="resume">
+                                        <a href="https://drive.google.com/file/d/11TmKh9-bl0uamlwwIC7R_GqwU8uTKpsn/view?usp=sharing" target="_blank" className="resume">
                                             PDF Resume
                                         </a>
                                     </div>

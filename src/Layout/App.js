@@ -74,16 +74,16 @@ const App = () => {
               <h1 className="hero_txt">
                 Hey! My name is Sheraz Tariq and I'm seeking full time roles in
                 <span className="clr-blue"> Software Development</span> in
-                <span className="clr-pink"> 2022</span>
+                <span className="clr-pink"> 2023</span>
               </h1>
               <p className="sub_txt my-4">
-                Also interested in Software Engineering roles (Web/Front-end)!
+                Also interested in Software Engineering roles (FULL STACK DEVELOPER)!
               </p>
               <div className="hero_btns pt-2 mt-4 d-flex align-items-center">
                 <a href="mailto:sherazztariq@gmail.com" className="chat">
                   Let's Chat!
                 </a>
-                <a href="https://drive.google.com/file/d/1OT9hoD_b8tRu0E05C599uxGk6SeOthXb/view?usp=drivesdk" target="_blank" className="resume">
+                <a href="https://drive.google.com/file/d/11TmKh9-bl0uamlwwIC7R_GqwU8uTKpsn/view?usp=sharing" target="_blank" className="resume">
                   PDF Resume
                 </a>
               </div>

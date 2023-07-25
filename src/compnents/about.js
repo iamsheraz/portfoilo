@@ -9,18 +9,18 @@ const About = (props) => {
                     <div className=" col-lg-6 col-md-6 col-sm-6 ps-0 left">
                         <div className='about_inner'>
                             <h2>
-                                I'm a Computer Science student
-                                <span className='blue_para' >  with a background in Analyst
+                                As a computer science graduate
+                                <span className='blue_para' >  with extensive experience in full-stack development
                                 </span>
                             </h2>
                             <p>
-                                My number 1 passion is making things - hence Software Development and being a product-minded Software Engineer are ways for me to build across engineering, design, and business
+                                My primary passion is creating and building. I view software development not just as a job, but as a means to combine engineering, design, and business to create robust and impactful solutions.
                             </p>
                             <p>
-                                Beyond the resume, I'm someone who looks on the positive side of things, is always up for a challenge, sweats the details, and values personal growth above all else
+                                In addition to my professional skills, I'm an individual who thrives on positivity and embraces challenges. I pay keen attention to detail and hold personal growth in the highest regard. My past roles, as reflected in my resume, have taught me the importance of these traits in the tech industry.
                             </p>
                             <p>
-                                I've got a lot more to share, and would love to chat about potential internship opportunities; even if they don't exist yet - let's get the conversation started!
+                                There is much more to my journey and experiences that I would love to share. I'm excited about discussing potential internship opportunities that could benefit from my skills and passion. Even if a formal opportunity doesn't exist, I am eager to explore possibilities. Let's start the conversation!
                             </p>
                             <div className="hero_btns pt-2 mt-4 d-flex align-items-center">
                                 <a href="mailto:sherazztariq@gmail.com" className="chat">
