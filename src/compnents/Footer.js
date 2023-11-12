@@ -32,14 +32,14 @@ const footer = () => {
                                 <a target="_blank" rel="noopener noreferrer" class="footer_ancor" href="https://nextjs.org/">Next.js</a>&nbsp;+&nbsp;
                                 <a target="_blank" rel="noopener noreferrer" class="footer_ancor" href="https://www.typescriptlang.org/">Typescript</a>
                             </li>
-                            <li class="list_item"><a target="_blank" rel="noopener noreferrer" class="footer_ancor" href="">Github Repository</a>
+                            <li class="list_item"><a target="_blank" rel="noopener noreferrer" class="footer_ancor" href="https://github.com/iamsheraz">Github Repository</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="copyright px-4 mx-2">
                     <p class="copyright_txt">
-                        © 2022-<a target="_blank" href="">Sheraz Tariq</a>
+                        © 2023-<a target="_blank" href="">Sheraz Tariq</a>
                     </p>
                 </div>
             </div>
