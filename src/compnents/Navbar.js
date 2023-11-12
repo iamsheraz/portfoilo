@@ -11,11 +11,11 @@ const Navbar = () => {
         <div className="Navbar d-flex align-items-center justify-content-between mx-auto ps-1 pe-3">
           <a href="#" className="navbar-brand text-light">
             <img className="brand-enj" src={navImg} alt="" />
-            hirejustinzhang.com
+            hiresheraz.com
           </a>
           <button className="btn-mode m-0 border-0">
             <svg
-            color="#fff"
+              color="#fff"
               stroke="#fff"
               fill="#fff"
               stroke-width="0"

@@ -174,6 +174,10 @@ const WholeWrapper = (props) => {
                                 <li className="nav-item" role="presentation">
                                     <button className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Projects<span className="badge bg-secondary bagespan">1</span></button>
                                 </li>
+                                <li className="nav-item" role="presentation">
+                                    <button className="nav-link" id="pills-certifications-tab" data-bs-toggle="pill" data-bs-target="#pills-certifications" type="button" role="tab" aria-controls="pills-certifications" aria-selected="false">Certifications<span className="badge bg-secondary bagespan">1</span></button>
+                                </li>
+
                             </ul>
                             <div className="tab-content" id="pills-tabContent">
                                 {/* Tab 1 */}
@@ -229,9 +233,30 @@ const WholeWrapper = (props) => {
                                         </div>
                                     </div>
                                 </div>
+                                {/* Certifications Tab */}
+                                <div className="tab-pane fade" id="pills-certifications" role="tabpanel" aria-labelledby="pills-certifications-tab">
+                                    <div className="row mx-0 cardsrow">
+                                        {/* Certification Card */}
+                                        <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 pe-0">
+                                            <div className='tabscard_one'>
+                                                <p className='tab_home_p pt-4'>Microsoft Certified: Azure Fundamentals</p>
+                                                <p className='tab_home_seco'>October 2023</p>
+                                                <p className='mt-3'>
+                                                    The AZ-900 certification covers a broad range of topics, including an understanding of cloud concepts, core Azure services, security, privacy, compliance, and trust, as well as Azure pricing and support.
+                                                </p>
+                                                <p>
+                                                    <a href="https://learn.microsoft.com/en-gb/users/muhammadtariq-4270/credentials/bdebba28cf2429af" target="_blank" rel="noopener noreferrer">View my AZ-900 Certification</a>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                        {/* Additional certifications can be added here */}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
 
                 </section>
 
@@ -281,7 +306,7 @@ const WholeWrapper = (props) => {
                 </section>
             </section>
 
-        </section>
+        </section >
     )
 };
 export default WholeWrapper;
