@@ -4,9 +4,7 @@ import "../Layout/App.css"
 import wrapPic from '../assets/imgs/memoji-smiling (1).webp';
 import thinkPic from '../assets/imgs/memoji-thinking.webp';
 import workPic from '../assets/imgs/memoji-laptop.webp';
-import metaPic from '../assets/imgs/meta.webp';
 import navImg from "./../assets/imgs/memoji-smiling.webp";
-import card2Pic from '../assets/imgs/casecom.png';
 
 const WholeWrapper = (props) => {
     return (
@@ -36,7 +34,7 @@ const WholeWrapper = (props) => {
                                 <h2 className="txt_heading">
                                     A seasoned Java Full Stack Developer <span className="clr-blue"> Computer science graduate from Bellevue University driven by a passion for building robust software solutions from end to end</span>
                                 </h2>
-                                <p className="point">My journey in software development started with an intense curiosity about how products are built as a whole. This curiosity evolved into a passion for making things a reality, whether that’s in software development, or in conceiving innovative business ideas.</p>
+                                <p className="point">My journey in software development started with an intense curiosity about how products are built as a whole. This curiosity evolved into a passion for making things a reality, whether that's in software development, or in conceiving innovative business ideas.</p>
                                 <p className="point">Whether it's developing Microservices using Spring Boot</p>
                                 <p className="point">Creating responsive UI components, or utilizing AWS services to support web applications</p>
                                 <p className="point clr-blue">
@@ -175,9 +173,11 @@ const WholeWrapper = (props) => {
                                     <button className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Projects<span className="badge bg-secondary bagespan">1</span></button>
                                 </li>
                                 <li className="nav-item" role="presentation">
-                                    <button className="nav-link" id="pills-certifications-tab" data-bs-toggle="pill" data-bs-target="#pills-certifications" type="button" role="tab" aria-controls="pills-certifications" aria-selected="false">Certifications<span className="badge bg-secondary bagespan">1</span></button>
+                                    <button className="nav-link" id="pills-certifications-tab" data-bs-toggle="pill" data-bs-target="#pills-certifications" type="button" role="tab" aria-controls="pills-certifications" aria-selected="false">Certifications<span className="badge bg-secondary bagespan">3</span></button>
                                 </li>
-
+                                <li className="nav-item" role="presentation">
+                                    <button className="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education<span className="badge bg-secondary bagespan">3</span></button>
+                                </li>
                             </ul>
                             <div className="tab-content" id="pills-tabContent">
                                 {/* Tab 1 */}
@@ -198,8 +198,8 @@ const WholeWrapper = (props) => {
                                     <div className="row mx-0 cardsrow">
                                         <div className="col-lg-6 col-md-6 col-sm-12 mt-4 ps-0">
                                             <div className='tabscard_one'>
-                                                <p className='tab_home_p pt-4'>Java Full Stack Developer at CDO Technologies.</p>
-                                                <p className='tab_home_seco'>TX 2018 to 2019:</p>
+                                                <p className='tab_home_p pt-4'>Java Full Stack Developer at FieldRoutes.</p>
+                                                <p className='tab_home_seco'>TX 2019 to 2022:</p>
                                                 <p className='mt-4'> contributed to software development in an Agile environment, developed user interfaces using Spring MVC and AngularJS, and implemented Spring features such as Dependency Injection and AOP. Additionally, I worked on RESTful services, managed transactions with Hibernate and JPA, and established a CI/CD pipeline using Jenkins.</p>
                                                 <p className="mt-1">Moreover, I was actively involved in the development of a Service Oriented Architecture (SOA) application, creating a single-page application using AngularJS. I gained extensive experience with Hibernate Criteria queries and ORM mappings, alongside creating Spring Batch processes and working with message broker services like Rabbit MQ and Active MQ. I also conducted end-to-end testing using the Protractor framework and implemented integration testing with Selenium and Cucumber. The role at CDO Technologies further bolstered my ability to work across various technologies and frameworks in the dynamic field of software development.</p>
                                             </div>
@@ -207,7 +207,7 @@ const WholeWrapper = (props) => {
                                         <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 pe-0">
                                             <div className='tabscard_one'>
                                                 <p className='tab_home_p pt-4'>Software Developer at Molina health care.</p>
-                                                <p className='tab_home_seco'>TX 2019 to 2021:</p>
+                                                <p className='tab_home_seco'>TX 2018 to 2019:</p>
                                                 <p className='mt-3'>
                                                     I was a Java Developer participating in all stages of the software development life cycle using Agile methodologies. I was heavily involved in business process analysis, requirements gathering, and creating user interface components using various technologies such as JSP, Spring, Servlets, and AngularJS. My tasks also included integrating Tiles 3 framework with Spring MVC and utilizing Hibernate and JPA for data access. Moreover, I implemented both RESTful and SOAP-based web services and maintained AWS infrastructure. My work at Molina Health Care gave me the opportunity to utilize my full skill set and deliver comprehensive software solutions.
                                                 </p>
@@ -236,8 +236,8 @@ const WholeWrapper = (props) => {
                                 {/* Certifications Tab */}
                                 <div className="tab-pane fade" id="pills-certifications" role="tabpanel" aria-labelledby="pills-certifications-tab">
                                     <div className="row mx-0 cardsrow">
-                                        {/* Certification Card */}
-                                        <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 pe-0">
+                                        {/* Microsoft Azure Fundamentals */}
+                                        <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 pe-4">
                                             <div className='tabscard_one'>
                                                 <p className='tab_home_p pt-4'>Microsoft Certified: Azure Fundamentals</p>
                                                 <p className='tab_home_seco'>October 2023</p>
@@ -247,10 +247,70 @@ const WholeWrapper = (props) => {
                                                 <p>
                                                     <a href="https://learn.microsoft.com/en-gb/users/muhammadtariq-4270/credentials/bdebba28cf2429af" target="_blank" rel="noopener noreferrer">View my AZ-900 Certification</a>
                                                 </p>
-
                                             </div>
                                         </div>
-                                        {/* Additional certifications can be added here */}
+
+                                        {/* AWS Certified Cloud Practitioner */}
+                                        <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 ps-0">
+                                            <div className='tabscard_one'>
+                                                <p className='tab_home_p pt-4'>AWS Certified Cloud Practitioner</p>
+                                                <p className='tab_home_seco'>2023</p>
+                                                <p className='mt-3'>
+                                                    The AWS Certified Cloud Practitioner validates foundational knowledge of AWS Cloud architecture, services, security, compliance, and economics. This certification demonstrates an understanding of AWS Cloud concepts, services and terminology.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        {/* Microsoft Certified: Azure AI */}
+                                        <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 pe-0">
+                                            <div className='tabscard_one'>
+                                                <p className='tab_home_p pt-4'>Microsoft Certified: Azure AI</p>
+                                                <p className='tab_home_seco'>2023</p>
+                                                <p className='mt-3'>
+                                                    This certification validates expertise in using Azure AI services and cognitive solutions. It covers skills in implementing and managing AI workloads, computer vision, natural language processing, and conversational AI solutions on Azure.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Education Tab */}
+                                <div className="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+                                    <div className="row mx-0 cardsrow">
+                                        {/* Master's Degree */}
+                                        <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 pe-4">
+                                            <div className='tabscard_one'>
+                                                <p className='tab_home_p pt-4'>Master of Science in Artificial Intelligence</p>
+                                                <p className='tab_home_seco'>University of Texas at Austin, USA (In Progress)</p>
+                                                <p className='mt-3'>
+                                                    Currently pursuing advanced studies in artificial intelligence, focusing on machine learning, deep learning, computer vision, and natural language processing technologies.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        {/* Bachelor's Degree */}
+                                        <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 ps-0">
+                                            <div className='tabscard_one'>
+                                                <p className='tab_home_p pt-4'>Bachelor of Science in Computer Software</p>
+                                                <p className='tab_home_seco'>Bellevue University at Nebraska, USA</p>
+                                                <p className='mt-3'>
+                                                    Completed a comprehensive program in computer software development, covering programming languages, software engineering principles, database management, and system design.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="row mx-0 cardsrow">
+                                        {/* Associate Degree */}
+                                        <div className="cardscol col-lg-6 col-md-6 col-sm-12 mt-4 pe-4">
+                                            <div className='tabscard_one'>
+                                                <p className='tab_home_p pt-4'>Associate of Science in Computer Science</p>
+                                                <p className='tab_home_seco'>Dallas College at Texas, USA</p>
+                                                <p className='mt-3'>
+                                                    Foundational education in computer science fundamentals, including programming, algorithms, data structures, and computer systems.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +340,7 @@ const WholeWrapper = (props) => {
                                         <a href="mailto:sherazztariq@gmail.com" className="chat">
                                             Let's get in touch!
                                         </a>
-                                        <a href="https://drive.google.com/file/d/11TmKh9-bl0uamlwwIC7R_GqwU8uTKpsn/view?usp=sharing" target="_blank" className="resume">
+                                        <a href="https://drive.google.com/file/d/1GqfKCnMoaAs29iQtw-e4tJAu-XTdpCaB/view?usp=sharing" target="_blank" rel="noreferrer" className="resume">
                                             PDF Resume
                                         </a>
                                     </div>
