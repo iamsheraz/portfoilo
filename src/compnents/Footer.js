@@ -1,6 +1,5 @@
 import React from 'react';
 import "../Layout/App.css";
-import whtsap from './../assets/imgs/whatsapp-svgrepo-com.svg';
 
 const footer = () => {
     return (
@@ -26,7 +25,7 @@ const footer = () => {
                     </div>
                     <div class="right col-lg-6 col-md-6 col-sm-6 pb-4">
                         <h2 class="footer_left_head">How I built this</h2>
-                        <ul role="list" class="ps-0">
+                        <ul class="ps-0">
                             <li class="d-flex list_item">
                                 <a target="_blank" rel="noopener noreferrer" class="footer_ancor" href="https://reactjs.org/">React.js</a>&nbsp;+&nbsp;
                                 <a target="_blank" rel="noopener noreferrer" class="footer_ancor" href="https://nextjs.org/">Next.js</a>&nbsp;+&nbsp;
@@ -39,7 +38,7 @@ const footer = () => {
                 </div>
                 <div className="copyright px-4 mx-2">
                     <p class="copyright_txt">
-                        © 2023-<a target="_blank" href="">Sheraz Tariq</a>
+                        © 2023-<a target="_blank" rel="noreferrer" href="https://github.com/iamsheraz">Sheraz Tariq</a>
                     </p>
                 </div>
             </div>

@@ -29,7 +29,7 @@ const App = () => {
           <div className="navbar_container">
             <div className="container-lg px-5 py-2">
               <div className="Navbar d-flex align-items-center justify-content-between mx-auto pe-3">
-                <a href="#" className="navbar-brand text-light">
+                <a href="/" className="navbar-brand text-light">
                   <img className="brand-enj" src={navImg} alt="" />
                   <span className="brand_txt">hiresheraz.com</span>
                 </a>
@@ -82,7 +82,7 @@ const App = () => {
                 <a href="mailto:sherazztariq@gmail.com" className="chat">
                   Let's Chat!
                 </a>
-                <a href="https://drive.google.com/file/d/1GqfKCnMoaAs29iQtw-e4tJAu-XTdpCaB/view?usp=sharing" target="_blank" className="resume">
+                <a href="https://drive.google.com/file/d/1GqfKCnMoaAs29iQtw-e4tJAu-XTdpCaB/view?usp=sharing" target="_blank" rel="noreferrer" className="resume">
                   PDF Resume
                 </a>
               </div>
