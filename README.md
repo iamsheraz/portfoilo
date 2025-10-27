@@ -214,10 +214,8 @@ Contributions, issues, and feature requests are welcome!
 **Sheraz Tariq**
 
 - 🌐 Website: [hiresheraz.com](https://hiresheraz.com)
-- 📧 Email: [sherazztariq@gmail.com](mailto:sherazztariq@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/mstariq](https://www.linkedin.com/in/mstariq)
 - 🐙 GitHub: [@iamsheraz](https://github.com/iamsheraz)
-- 🐦 Twitter: [@Callmesheraz](https://twitter.com/Callmesheraz)
 
 ---
 
