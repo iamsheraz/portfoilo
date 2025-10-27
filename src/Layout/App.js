@@ -4,6 +4,7 @@ import WholeWrapper from "../compnents/all-sec";
 import Footer from "../compnents/Footer";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Dropdown } from "react-bootstrap";
 import navImg from "./../assets/imgs/memoji-smiling.webp";
 import heroImg from './../assets/imgs/hero.jpeg'
 
@@ -82,9 +83,38 @@ const App = () => {
                 <a href="mailto:sherazztariq@gmail.com" className="chat">
                   Let's Chat!
                 </a>
-                <a href="https://drive.google.com/file/d/1GqfKCnMoaAs29iQtw-e4tJAu-XTdpCaB/view?usp=sharing" target="_blank" rel="noreferrer" className="resume">
-                  PDF Resume
-                </a>
+
+                <Dropdown className="resume-dropdown ms-4">
+                  <Dropdown.Toggle variant="outline-light" id="resume-dropdown" className="resume-toggle">
+                    📄 Resume
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu className="resume-menu">
+                    <Dropdown.Item
+                      href="/Sheraz-Tariq-Resume.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="resume-item"
+                    >
+                      👁️ View Resume
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="/Sheraz-Tariq-Resume.pdf"
+                      download="Sheraz-Tariq-Resume.pdf"
+                      className="resume-item"
+                    >
+                      📥 Download PDF
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="https://www.linkedin.com/in/mstariq"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="resume-item"
+                    >
+                      💼 LinkedIn Profile
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
             </div>
             <div className="video_hero col-lg-5 col-md-6 col-sm-5 col-sm-12 py-5">
