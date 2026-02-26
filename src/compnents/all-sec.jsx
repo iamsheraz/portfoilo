@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../Layout/App.css"
-import { Dropdown } from "react-bootstrap";
+import ResumeDropdown from "./ResumeDropdown";
 import wrapPic from '../assets/imgs/memoji-smiling (1).webp';
 import thinkPic from '../assets/imgs/memoji-thinking.webp';
 import workPic from '../assets/imgs/memoji-laptop.webp';
@@ -342,37 +342,7 @@ const WholeWrapper = (props) => {
                                             Let's get in touch!
                                         </a>
 
-                                        <Dropdown className="resume-dropdown ms-4">
-                                            <Dropdown.Toggle variant="outline-light" id="resume-dropdown-tldr" className="resume-toggle">
-                                                📄 Resume
-                                            </Dropdown.Toggle>
-
-                                            <Dropdown.Menu className="resume-menu">
-                                                <Dropdown.Item
-                                                    href="/Sheraz-Tariq-Resume.pdf"
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                    className="resume-item"
-                                                >
-                                                    👁️ View Resume
-                                                </Dropdown.Item>
-                                                <Dropdown.Item
-                                                    href="/Sheraz-Tariq-Resume.pdf"
-                                                    download="Sheraz-Tariq-Resume.pdf"
-                                                    className="resume-item"
-                                                >
-                                                    📥 Download PDF
-                                                </Dropdown.Item>
-                                                <Dropdown.Item
-                                                    href="https://www.linkedin.com/in/mstariq"
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                    className="resume-item"
-                                                >
-                                                    💼 LinkedIn Profile
-                                                </Dropdown.Item>
-                                            </Dropdown.Menu>
-                                        </Dropdown>
+                                        <ResumeDropdown id="resume-dropdown-tldr" />
                                     </div>
                                 </div>
                             </div>
