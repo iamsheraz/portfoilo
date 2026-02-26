@@ -338,7 +338,7 @@ const WholeWrapper = (props) => {
                                         With over six years of professional experience, I have a wealth of knowledge to share and am eager to embrace new challenges. I am particularly interested in exploring opportunities where I can apply my technical prowess and product-oriented mindset to foster growth and innovation. Even if a formal opportunity does not currently exist, I am open to discussion and potential collaboration. Let's start the conversation!
                                     </p>
                                     <div className="hero_btns pt-2 mt-4 d-flex align-items-center">
-                                        <a href="mailto:sherazztariq@gmail.com" className="chat">
+                                        <a href="mailto:hiresheraz@gmail.com" className="chat">
                                             Let's get in touch!
                                         </a>
 

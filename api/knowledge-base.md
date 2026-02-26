@@ -4,7 +4,7 @@
 Sheraz Tariq is a Full Stack Developer, AI Engineer, and Software Engineer based in the Dallas-Fort Worth area, Texas. He has 8+ years of professional experience building enterprise-grade microservices, cloud-native applications, and AI-powered systems. He is currently pursuing a Master's degree in Artificial Intelligence at the University of Texas at Austin while working full-time. He is open to full-time roles in Software Development, AI/ML Engineering, and Cloud Engineering.
 
 ## Contact
-- Email: sherazztariq@gmail.com
+- Email: hiresheraz@gmail.com
 - LinkedIn: https://www.linkedin.com/in/mstariq
 - Portfolio: https://hiresheraz.com
 
@@ -187,7 +187,7 @@ Sheraz holds both AWS and Azure certifications, with hands-on production experie
 Yes! You can view or download Sheraz's resume from the portfolio site at hiresheraz.com. There's a Resume dropdown button on the homepage.
 
 ### How can I contact Sheraz?
-You can reach Sheraz via email at sherazztariq@gmail.com or connect on LinkedIn at linkedin.com/in/mstariq.
+You can reach Sheraz via email at hiresheraz@gmail.com or connect on LinkedIn at linkedin.com/in/mstariq.
 
 ### Where is Sheraz located?
 Sheraz is based in the Dallas-Fort Worth area, Texas (specifically near Lavon/Lewisville area). He is open to both local and remote opportunities.

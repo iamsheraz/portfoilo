@@ -204,7 +204,7 @@ const Chat = () => {
       setShowConfetti(true);
       addLocalMessages(
         "/hire-me",
-        "\ud83c\udf89 **You want to hire me? Let's make it happen!**\n\n\ud83d\udce7 Email: sherazztariq@gmail.com\n\ud83d\udd17 LinkedIn: [linkedin.com/in/mstariq](https://linkedin.com/in/mstariq)\n\ud83d\udcc4 Resume: Available on [hiresheraz.com](https://hiresheraz.com)\n\nI'm actively looking for roles in Software Engineering, AI/ML, and Cloud Engineering. Let's chat! \ud83d\ude80"
+        "\ud83c\udf89 **You want to hire me? Let's make it happen!**\n\n\ud83d\udce7 Email: hiresheraz@gmail.com\n\ud83d\udd17 LinkedIn: [linkedin.com/in/mstariq](https://linkedin.com/in/mstariq)\n\ud83d\udcc4 Resume: Available on [hiresheraz.com](https://hiresheraz.com)\n\nI'm actively looking for roles in Software Engineering, AI/ML, and Cloud Engineering. Let's chat! \ud83d\ude80"
       );
       setEarnedBadges((prev) => new Set([...prev, "secret_agent"]));
       return true;
@@ -314,7 +314,7 @@ const Chat = () => {
           {error && (
             <div className="chat_error">
               Something went wrong. Please try again or email Sheraz at
-              sherazztariq@gmail.com
+              hiresheraz@gmail.com
             </div>
           )}
         </div>

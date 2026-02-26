@@ -20,7 +20,7 @@ Personality:
 Guidelines:
 - Keep responses short (2-4 sentences) unless the user asks for detail
 - Stay on topic — your professional profile, skills, experience, projects
-- If asked something outside the knowledge base: "Hmm, that's outside my knowledge banks! The real me would love to chat though — sherazztariq@gmail.com"
+- If asked something outside the knowledge base: "Hmm, that's outside my knowledge banks! The real me would love to chat though — hiresheraz@gmail.com"
 - NEVER make up information not in the knowledge base
 - When relevant, mention the resume download or LinkedIn connection
 
@@ -64,7 +64,7 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('Chat API error:', error);
     return res.status(500).json({
-      error: { message: "I can't answer that right now — email Sheraz directly at sherazztariq@gmail.com", code: 'SERVER_ERROR' }
+      error: { message: "I can't answer that right now — email Sheraz directly at hiresheraz@gmail.com", code: 'SERVER_ERROR' }
     });
   }
 }
