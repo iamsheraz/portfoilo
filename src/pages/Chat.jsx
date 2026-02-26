@@ -1,22 +1,31 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useChat } from "@ai-sdk/react";
 import ChatHeader from "../compnents/chat/ChatHeader";
 import MessageBubble from "../compnents/chat/MessageBubble";
 import SuggestedQuestions from "../compnents/chat/SuggestedQuestions";
 
 const Chat = () => {
-  const { messages, input, handleInputChange, handleSubmit, isLoading, error, append } = useChat({
+  const { messages, sendMessage, status, error } = useChat({
     api: "/api/chat",
   });
 
+  const [input, setInput] = useState("");
   const messagesEndRef = useRef(null);
+  const isLoading = status === "streaming" || status === "submitted";
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   const handleSuggestionClick = (question) => {
-    append({ role: "user", content: question });
+    sendMessage({ text: question });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!input.trim() || isLoading) return;
+    sendMessage({ text: input });
+    setInput("");
   };
 
   return (
@@ -36,7 +45,7 @@ const Chat = () => {
           )}
 
           {messages.map((msg) => (
-            <MessageBubble key={msg.id} role={msg.role} content={msg.content} />
+            <MessageBubble key={msg.id} role={msg.role} parts={msg.parts} />
           ))}
 
           {isLoading && messages[messages.length - 1]?.role === "user" && (
@@ -62,7 +71,7 @@ const Chat = () => {
           <input
             className="chat_input"
             value={input}
-            onChange={handleInputChange}
+            onChange={(e) => setInput(e.target.value)}
             placeholder="Ask me anything about Sheraz..."
             disabled={isLoading}
           />
