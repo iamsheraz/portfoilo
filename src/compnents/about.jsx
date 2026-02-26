@@ -24,7 +24,7 @@ const About = (props) => {
                                 There is much more to my journey and experiences that I would love to share. I'm excited about discussing potential internship opportunities that could benefit from my skills and passion. Even if a formal opportunity doesn't exist, I am eager to explore possibilities. Let's start the conversation!
                             </p>
                             <div className="hero_btns pt-2 mt-4 d-flex align-items-center">
-                                <a href="mailto:sherazztariq@gmail.com" className="chat">
+                                <a href="mailto:hiresheraz@gmail.com" className="chat">
                                     Let's get in touch!
                                 </a>
 
