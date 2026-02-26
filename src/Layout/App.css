@@ -1626,10 +1626,12 @@ a:focus,
 /* ==================== */
 
 .chat_page {
-    min-height: calc(100vh - 80px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding-top: 80px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .chat_container {
@@ -1638,7 +1640,8 @@ a:focus,
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 80px);
+    flex: 1;
+    min-height: 0;
     padding: 0 1rem;
 }
 
@@ -1688,6 +1691,26 @@ a:focus,
 .chat_header_status {
     font-size: var(--chakra-fontSizes-xs);
     color: var(--chakra-colors-whiteAlpha-600);
+}
+
+.chat_new_chat_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--chakra-colors-whiteAlpha-100);
+    border: 1px solid var(--chakra-colors-whiteAlpha-200);
+    color: var(--chakra-colors-whiteAlpha-700);
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+    font-size: var(--chakra-fontSizes-xs);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chat_new_chat_btn:hover {
+    background: var(--chakra-colors-blue-500);
+    border-color: var(--chakra-colors-blue-500);
+    color: #fff;
 }
 
 /* Chat Messages Area */
@@ -1934,6 +1957,74 @@ a:focus,
     border-radius: 8px;
 }
 
+/* Slash Command Autocomplete */
+.chat_input_wrapper {
+    position: relative;
+}
+
+.chat_slash_menu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background: #1e293b;
+    border: 1px solid var(--chakra-colors-whiteAlpha-200);
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    animation: slashMenuIn 0.15s ease-out;
+    z-index: 10;
+}
+
+@keyframes slashMenuIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat_slash_item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.15s ease;
+}
+
+.chat_slash_item:hover {
+    background: rgba(96, 165, 250, 0.15);
+}
+
+.chat_slash_icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.chat_slash_command {
+    font-weight: 600;
+    font-size: var(--chakra-fontSizes-sm);
+    color: #60a5fa;
+    font-family: monospace;
+    min-width: 90px;
+}
+
+.chat_slash_desc {
+    font-size: var(--chakra-fontSizes-xs);
+    color: var(--chakra-colors-whiteAlpha-600);
+}
+
 /* Input Form */
 .chat_input_form {
     display: flex;
@@ -2003,6 +2094,18 @@ a:focus,
 
 .text_dark .chat_header_status {
     color: var(--chakra-colors-gray-400);
+}
+
+.text_dark .chat_new_chat_btn {
+    background: var(--chakra-colors-gray-50);
+    border-color: var(--chakra-colors-gray-200);
+    color: var(--chakra-colors-gray-500);
+}
+
+.text_dark .chat_new_chat_btn:hover {
+    background: var(--chakra-colors-blue-500);
+    border-color: var(--chakra-colors-blue-500);
+    color: #fff;
 }
 
 .text_dark .chat_welcome_text {
@@ -2079,6 +2182,20 @@ a:focus,
 .text_dark .chat_error {
     color: var(--chakra-colors-red-500);
     background: rgba(254, 178, 178, 0.15);
+}
+
+.text_dark .chat_slash_menu {
+    background: #fff;
+    border-color: var(--chakra-colors-gray-200);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text_dark .chat_slash_item:hover {
+    background: rgba(96, 165, 250, 0.1);
+}
+
+.text_dark .chat_slash_desc {
+    color: var(--chakra-colors-gray-500);
 }
 
 .text_dark .chat_input_form {
@@ -2528,6 +2645,23 @@ a:focus,
 .chat_terminal .chat_reaction_selected {
     background: rgba(0, 255, 65, 0.05);
     border-color: #003d11;
+}
+
+.chat_terminal .chat_slash_menu {
+    background: #0a0a0a;
+    border-color: #003d11;
+}
+
+.chat_terminal .chat_slash_item:hover {
+    background: rgba(0, 255, 65, 0.1);
+}
+
+.chat_terminal .chat_slash_command {
+    color: #39ff14;
+}
+
+.chat_terminal .chat_slash_desc {
+    color: #006b1d;
 }
 
 /* Light Mode Overrides for New Features */

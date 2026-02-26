@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { useChat } from "@ai-sdk/react";
 import ChatHeader from "../compnents/chat/ChatHeader";
 import MessageBubble from "../compnents/chat/MessageBubble";
@@ -66,12 +66,15 @@ const Chat = () => {
   const [earnedBadges, setEarnedBadges] = useState(new Set());
   const [newBadge, setNewBadge] = useState(null);
   const konamiRef = useRef(0);
-  const messagesEndRef = useRef(null);
+  const messagesContainerRef = useRef(null);
   const isLoading = status === "streaming" || status === "submitted";
 
-  // Auto-scroll
+  // Auto-scroll — only scroll the messages container, not the outer page
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    const container = messagesContainerRef.current;
+    if (container) {
+      container.scrollTop = container.scrollHeight;
+    }
   }, [messages]);
 
   // Topic tracking
@@ -158,6 +161,12 @@ const Chat = () => {
     }
   }, [showConfetti]);
 
+  const handleNewChat = useCallback(() => {
+    setMessages([]);
+    setExploredTopics(new Set());
+    setTerminalMode(false);
+  }, [setMessages]);
+
   const addLocalMessages = useCallback(
     (userText, assistantText) => {
       const ts = Date.now();
@@ -213,6 +222,24 @@ const Chat = () => {
     sendMessage({ text: question });
   };
 
+  // Slash command autocomplete
+  const SLASH_COMMANDS = [
+    { command: "/hire-me", icon: "\ud83c\udf89", desc: "Get Sheraz's contact info" },
+    { command: "/joke", icon: "\ud83d\ude02", desc: "Hear a tech joke" },
+    { command: "/terminal", icon: "\ud83d\udcbb", desc: "Toggle hacker mode" },
+  ];
+
+  const slashSuggestions = useMemo(() => {
+    if (!input.startsWith("/") || input.includes(" ")) return [];
+    const query = input.toLowerCase();
+    return SLASH_COMMANDS.filter((cmd) => cmd.command.startsWith(query));
+  }, [input]);
+
+  const handleSlashSelect = (command) => {
+    setInput("");
+    handleEasterEgg(command);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
@@ -239,7 +266,7 @@ const Chat = () => {
   return (
     <section className={`chat_page ${terminalMode ? "chat_terminal" : ""}`}>
       <div className="chat_container">
-        <ChatHeader />
+        <ChatHeader hasMessages={messages.length > 0} onNewChat={handleNewChat} />
 
         <ExplorationTracker
           exploredTopics={exploredTopics}
@@ -248,7 +275,7 @@ const Chat = () => {
           earnedBadges={earnedBadges}
         />
 
-        <div className="chat_messages">
+        <div className="chat_messages" ref={messagesContainerRef}>
           {messages.length === 0 && (
             <SuggestedQuestions onSelect={handleSuggestionClick} />
           )}
@@ -290,10 +317,28 @@ const Chat = () => {
               sherazztariq@gmail.com
             </div>
           )}
-
-          <div ref={messagesEndRef} />
         </div>
 
+        <div className="chat_input_wrapper">
+          {slashSuggestions.length > 0 && (
+            <div className="chat_slash_menu">
+              {slashSuggestions.map((cmd) => (
+                <button
+                  key={cmd.command}
+                  className="chat_slash_item"
+                  type="button"
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    handleSlashSelect(cmd.command);
+                  }}
+                >
+                  <span className="chat_slash_icon">{cmd.icon}</span>
+                  <span className="chat_slash_command">{cmd.command}</span>
+                  <span className="chat_slash_desc">{cmd.desc}</span>
+                </button>
+              ))}
+            </div>
+          )}
         <form className="chat_input_form" onSubmit={handleSubmit}>
           <input
             className="chat_input"
@@ -331,6 +376,7 @@ const Chat = () => {
             )}
           </button>
         </form>
+        </div>
       </div>
 
       {/* Badge Toast */}
