@@ -1,5 +1,5 @@
 import { openai } from '@ai-sdk/openai';
-import { streamText, pipeUIMessageStreamToResponse, createUIMessageStream } from 'ai';
+import { streamText, pipeUIMessageStreamToResponse, createUIMessageStream, convertToModelMessages } from 'ai';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -33,10 +33,12 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: { message: 'Messages array is required', code: 'INVALID_REQUEST' } });
     }
 
+    const modelMessages = await convertToModelMessages(messages);
+
     const result = streamText({
       model: openai('gpt-4o-mini'),
       system: systemPrompt,
-      messages,
+      messages: modelMessages,
       maxTokens: 500,
     });
 

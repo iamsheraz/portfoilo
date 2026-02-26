@@ -1,4 +1,5 @@
 import React from "react";
+import Markdown from "react-markdown";
 
 const MessageBubble = ({ role, parts }) => {
   const text = parts
@@ -11,7 +12,13 @@ const MessageBubble = ({ role, parts }) => {
   return (
     <div className={`chat_message chat_message_${role}`}>
       <div className={`chat_bubble chat_bubble_${role}`}>
-        <p className="chat_bubble_text">{text}</p>
+        {role === "assistant" ? (
+          <div className="chat_bubble_text chat_markdown">
+            <Markdown>{text}</Markdown>
+          </div>
+        ) : (
+          <p className="chat_bubble_text">{text}</p>
+        )}
       </div>
     </div>
   );
