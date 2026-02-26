@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router";
 import About from "../compnents/about";
 import WholeWrapper from "../compnents/all-sec";
 import ResumeDropdown from "../compnents/ResumeDropdown";
@@ -25,9 +26,9 @@ const Home = () => {
               Also passionate about Machine Learning roles (AI/ML Engineer, Data Scientist)!
             </p>
             <div className="hero_btns pt-2 mt-4 d-flex align-items-center">
-              <a href="mailto:sherazztariq@gmail.com" className="chat">
+              <Link to="/chat" className="chat">
                 Let's Chat!
-              </a>
+              </Link>
 
               <ResumeDropdown id="resume-dropdown-hero" />
             </div>
