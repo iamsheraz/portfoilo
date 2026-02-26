@@ -313,8 +313,9 @@ const Chat = () => {
 
           {error && (
             <div className="chat_error">
-              Something went wrong. Please try again or email Sheraz at
-              hiresheraz@gmail.com
+              {error.message?.includes('too quickly') || error.status === 429
+                ? "You're sending messages too quickly. Please wait a moment and try again."
+                : "Something went wrong. Please try again or email Sheraz at hiresheraz@gmail.com"}
             </div>
           )}
         </div>

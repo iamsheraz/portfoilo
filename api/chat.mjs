@@ -2,6 +2,23 @@ import { openai } from '@ai-sdk/openai';
 import { streamText, pipeUIMessageStreamToResponse, createUIMessageStream, convertToModelMessages } from 'ai';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { Ratelimit } from '@upstash/ratelimit';
+import { Redis } from '@upstash/redis';
+
+const ratelimit = new Ratelimit({
+  redis: Redis.fromEnv(),
+  limiter: Ratelimit.slidingWindow(10, '60 s'),
+  analytics: true,
+  prefix: 'ratelimit:chat',
+});
+
+function getClientIp(req) {
+  const forwarded = req.headers['x-forwarded-for'];
+  if (forwarded) {
+    return forwarded.split(',')[0].trim();
+  }
+  return req.headers['x-real-ip'] || '127.0.0.1';
+}
 
 const knowledgeBase = readFileSync(
   join(process.cwd(), 'api', 'knowledge-base.md'),
@@ -35,6 +52,22 @@ ${knowledgeBase}`;
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: { message: 'Method not allowed', code: 'METHOD_NOT_ALLOWED' } });
+  }
+
+  const ip = getClientIp(req);
+  const { success, limit, remaining, reset } = await ratelimit.limit(ip);
+
+  res.setHeader('X-RateLimit-Limit', limit);
+  res.setHeader('X-RateLimit-Remaining', remaining);
+  res.setHeader('X-RateLimit-Reset', reset);
+
+  if (!success) {
+    return res.status(429).json({
+      error: {
+        message: "You're sending messages too quickly. Please wait a moment and try again.",
+        code: 'RATE_LIMITED',
+      }
+    });
   }
 
   try {
