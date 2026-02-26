@@ -12,8 +12,9 @@ const Home = () => {
 
   return (
     <>
-      {/* Hero Sec */}
-      <div className="hero_main container-lg p-5 pb-0">
+      <section className="header_sec">
+        {/* Hero Sec */}
+        <div className="hero_main container-lg p-5 pb-0">
         <div className=" row mx-0 d-flex align-items-center py-5">
           <div className="txt col-lg-7 col-md-6 col-sm-7 col-sm-12">
             <h1 className="hero_txt">
@@ -38,7 +39,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* Hero Sec */}
+        {/* Hero Sec */}
+      </section>
 
       <section className="main_body_content_wrap">
         {/* Switch Panel */}

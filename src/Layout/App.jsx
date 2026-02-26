@@ -18,8 +18,7 @@ const App = () => {
     <BrowserRouter>
       <div className={isMode ? "all_wrapper_pro" : "all_wrapper_pro text_dark"}>
         {/* Navbar */}
-        <section className="header_sec">
-          <section className="Navbar">
+        <section className="Navbar">
             <div className="navbar_container">
               <div className="container-lg px-5 py-2">
                 <div className="Navbar d-flex align-items-center justify-content-between mx-auto pe-3">
@@ -59,7 +58,6 @@ const App = () => {
                 </div>
               </div>
             </div>
-          </section>
         </section>
         {/* Navbar */}
 
