@@ -335,13 +335,15 @@ const WholeWrapper = (props) => {
                                         As a Java Full Stack Developer, my foremost passion lies in creating robust and effective software solutions. This role allows me to construct across the broad spectrum of engineering, design, and business, capitalizing on my skills and interests.
                                     </p>
                                     <p>
-                                        With over six years of professional experience, I have a wealth of knowledge to share and am eager to embrace new challenges. I am particularly interested in exploring opportunities where I can apply my technical prowess and product-oriented mindset to foster growth and innovation. Even if a formal opportunity does not currently exist, I am open to discussion and potential collaboration. Let's start the conversation!
+                                        With over six years of professional experience, I have a wealth of knowledge to share and am eager to embrace new challenges. I am particularly interested in exploring opportunities where I can apply my technical prowess and product-oriented mindset to foster growth and innovation. Even if a formal opportunity does not currently exist, I am open to discussion and potential collaboration. Schedule a free 30-minute call to discuss your project, or drop me a line anytime.
                                     </p>
                                     <div className="hero_btns pt-2 mt-4 d-flex align-items-center">
                                         <a href="mailto:hiresheraz@gmail.com" className="chat">
                                             Let's get in touch!
                                         </a>
-
+                                        <a href="https://calendly.com/hiresheraz/30min" target="_blank" rel="noopener noreferrer" className="chat calendar_btn ms-3" aria-label="Book a 30-minute call on Calendly (opens in new tab)">
+                                            Schedule a 30-Min Call
+                                        </a>
                                         <ResumeDropdown id="resume-dropdown-tldr" />
                                     </div>
                                 </div>
