@@ -1427,6 +1427,89 @@ a:focus,
 }
 
 
+/* Calendar Booking Button */
+.hero_btns .chat.calendar_btn {
+    background: transparent;
+    color: var(--chakra-colors-blue-200);
+    border: 1px solid var(--chakra-colors-blue-200);
+}
+
+.hero_btns .chat.calendar_btn:hover {
+    background: var(--chakra-colors-blue-200);
+    color: var(--chakra-colors-gray-800);
+}
+
+/* GitHub Activity Section */
+.github_activity_section {
+    padding: 3rem 0 2rem;
+}
+
+.github_activity_title {
+    font-family: var(--chakra-fonts-heading);
+    font-weight: var(--chakra-fontWeights-bold);
+    font-size: var(--chakra-fontSizes-2xl);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.github_stats_row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.github_stat_card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.75rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.github_stat_card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(88, 166, 255, 0.3);
+}
+
+.github_stat_value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #58a6ff;
+    line-height: 1.2;
+}
+
+.github_stat_label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+    margin-top: 0.25rem;
+}
+
+.github_calendar_wrapper {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .github_stats_row {
+        gap: 0.5rem;
+    }
+    .github_stat_value {
+        font-size: 1.25rem;
+    }
+    .github_stat_label {
+        font-size: 0.7rem;
+    }
+    .github_stat_card {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
 /* Footer Ends */
 
 
@@ -1476,6 +1559,39 @@ a:focus,
 .text_dark .second_col,
 .text_dark .mainfooter {
     background: var(--chakra-colors-gray-100);
+}
+
+.text_dark .hero_btns .chat.calendar_btn {
+    color: var(--chakra-colors-blue-600);
+    border-color: var(--chakra-colors-blue-600);
+    background: transparent;
+}
+
+.text_dark .hero_btns .chat.calendar_btn:hover {
+    background: var(--chakra-colors-blue-600);
+    color: #fff;
+}
+
+.text_dark .github_activity_title {
+    color: var(--chakra-colors-gray-800);
+}
+
+.text_dark .github_stat_card {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.text_dark .github_stat_card:hover {
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(3, 102, 214, 0.3);
+}
+
+.text_dark .github_stat_value {
+    color: #0366d6;
+}
+
+.text_dark .github_stat_label {
+    color: var(--chakra-colors-gray-600);
 }
 
 .text_dark .switch_panel {

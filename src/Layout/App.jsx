@@ -1,6 +1,7 @@
 import React, { useState, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router";
 import Footer from "../compnents/Footer";
+import GitHubActivity from "../compnents/GitHubActivity";
 import Home from "../pages/Home";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -70,6 +71,7 @@ const App = () => {
           </Routes>
         </Suspense>
 
+        <GitHubActivity isMode={isMode} />
         <Footer />
       </div>
     </BrowserRouter>

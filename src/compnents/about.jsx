@@ -21,13 +21,15 @@ const About = (props) => {
                                 In addition to my professional skills, I'm an individual who thrives on positivity and embraces challenges. I pay keen attention to detail and hold personal growth in the highest regard. My past roles, as reflected in my resume, have taught me the importance of these traits in the tech industry.
                             </p>
                             <p>
-                                There is much more to my journey and experiences that I would love to share. I'm excited about discussing potential internship opportunities that could benefit from my skills and passion. Even if a formal opportunity doesn't exist, I am eager to explore possibilities. Let's start the conversation!
+                                There is much more to my journey and experiences that I would love to share. I'm excited about discussing potential opportunities that could benefit from my skills and passion. Even if a formal opportunity doesn't exist, I am eager to explore possibilities. Schedule a free 30-minute call, or reach out anytime.
                             </p>
                             <div className="hero_btns pt-2 mt-4 d-flex align-items-center">
                                 <a href="mailto:hiresheraz@gmail.com" className="chat">
                                     Let's get in touch!
                                 </a>
-
+                                <a href="https://calendly.com/hiresheraz/30min" target="_blank" rel="noopener noreferrer" className="chat calendar_btn ms-3" aria-label="Book a 30-minute call on Calendly (opens in new tab)">
+                                    Schedule a 30-Min Call
+                                </a>
                                 <ResumeDropdown id="resume-dropdown-about" />
                             </div>
                         </div>

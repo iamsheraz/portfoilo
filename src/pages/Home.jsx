@@ -29,7 +29,9 @@ const Home = () => {
               <Link to="/chat" className="chat">
                 Let's Chat!
               </Link>
-
+              <a href="https://calendly.com/hiresheraz/30min" target="_blank" rel="noopener noreferrer" className="chat calendar_btn ms-3" aria-label="Book a 30-minute call on Calendly (opens in new tab)">
+                Book a Call
+              </a>
               <ResumeDropdown id="resume-dropdown-hero" />
             </div>
           </div>
